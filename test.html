@@ -11,28 +11,27 @@
 	// var object = {
 	//     name: "My Object",
 	//     getNameFunc: function () {
-	// 		var test = function () {
+	//         return function () {
 	// 	        return this.name;
-	// 	    }
-	//         return test;
+	// 	    };
 	//     }
 	// };
 	// alert(object.getNameFunc()());
 
-	var name = "The Window";
-	var object = function(){
-	    this.name= "My Object";
-	};
- 	object.prototype = {
- 		getNameFunc : function () {
- 			var test = function () {
-		        return this.name;
-		    }
-	        return test;
-	    }
-    }
-    var o = new object();
-	alert(o.getNameFunc()());
+	// var name = "The Window";
+	// var object = function(){
+	//     this.name= "My Object";
+	// };
+ // 	object.prototype = {
+ // 		getNameFunc : function () {
+ // 			var test = function () {
+	// 	        return this.name;
+	// 	    }
+	//         return test;
+	//     }
+ //    }
+ //    var o = new object();
+	// alert(o.getNameFunc()());
 	</script>
 </body>
 </html>
